@@ -1,0 +1,399 @@
+---
+title: Introducción a Rstudio
+author: 
+  Carlos Puma 
+  <center><a href="url"><img src="https://scontent.faqp3-1.fna.fbcdn.net/v/t1.15752-9/s206x206/269975978_4813364912057603_3696184310843055192_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeG0nDQ2RjgRh4cOanzlNsDdE0HzODKAaQgTQfM4MoBpCA6CW6Q15X38coM85E7JvyBX3xLlB2L3vonqiuPEPksU&_nc_ohc=16BfUQhirfkAX-V9dPp&_nc_ht=scontent.faqp3-1.fna&oh=03_AVIxl4vKvWAvBi-FflE82wV12qNE37TIwfP8WaO_mXQYrw&oe=61FECBF5" height="200" width="200" style="border-radius:50%"></a>
+  <br><br>
+  <center><a href="https://twitter.com/PumaMaque"><img src="https://logodownload.org/wp-content/uploads/2014/09/twitter-logo-2-1.png" alt="git" width="38px"><span style="font-size:30px"><span style="color:white">_Carlos_Puma</span></span>
+  <center><a href="https://github.com/cmaque4"><img src="http://assets.stickpng.com/images/5847f98fcef1014c0b5e48c0.png" alt="twitter" width="38px"><span style="font-size:30px"><span style="color:white">_Carlos_Puma</span></span>
+  <center><a href="https://rpubs.com/Carlos_Puma"><img src="https://cdn-icons-png.flaticon.com/512/64/64572.png" alt="twitter" width="38px"> <span style="font-size:30px"><span style="color:white">RPubs.Carlos.Puma</span>
+subtitle:
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r xaringan-tachyons, echo=FALSE}
+xaringanExtra::use_tachyons()
+```
+
+```{r xaringan-extra-styles, echo=FALSE}
+xaringanExtra::use_extra_styles(hover_code_line = TRUE, mute_unhighlighted_code = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_mono_light(base_color = "#100c08", #cambiar el color del titulo dela dia
+                 text_color = "#100c08", #cambiar el color del texto en genera
+                 title_slide_text_color = "	#cdc9c9", #cambiar color letra 1ra dia
+                 title_slide_background_color = "#82204A", # cambia color fondo de la diapo primera
+)
+                 
+```
+
+<img src="https://animecorner.me/wp-content/uploads/2021/11/blue-period-ep4-thumbnail.jpg" alt="" width="px">
+
+
+---
+background-color: #28AFB0
+class: left, middle
+
+# Vamos **Iniciar**
+
+.pull-left[
+- One **bullet**.
+- Another bullet.
+- completementando ideas
+- ideando ideas
+
+]
+
+.pull-right[
+<div><p style = 'right;margin: -300px 0px'>
+<img src="https://i1.wp.com/elpalomitron.com/wp-content/uploads/2019/11/Rese%C3%B1a-de-Blue-Period-Yatora-2-El-Palomitr%C3%B3n.jpg?resize=319%2C497&ssl=1"width="550px" height="600px"></p></div>
+]
+---
+
+## Typography
+
+<center><a href="url"><img src="https://scontent.faqp3-1.fna.fbcdn.net/v/t1.15752-9/s206x206/269975978_4813364912057603_3696184310843055192_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeG0nDQ2RjgRh4cOanzlNsDdE0HzODKAaQgTQfM4MoBpCA6CW6Q15X38coM85E7JvyBX3xLlB2L3vonqiuPEPksU&_nc_ohc=16BfUQhirfkAX-V9dPp&_nc_ht=scontent.faqp3-1.fna&oh=03_AVIxl4vKvWAvBi-FflE82wV12qNE37TIwfP8WaO_mXQYrw&oe=61FECBF5" height="200" width="200" style="border-radius:50%"></a>
+
+Text can be **bold**, _italic_, ~~strikethrough~~, or `inline code`.
+
+[Link to another slide](#colors).
+
+### Lorem Ipsum
+
+Dolor imperdiet nostra sapien scelerisque praesent curae metus facilisis dignissim tortor. 
+Lacinia neque mollis nascetur neque urna velit bibendum. 
+Himenaeos suspendisse leo varius mus risus sagittis aliquet venenatis duis nec.
+
+- Dolor cubilia nostra nunc sodales
+
+- Consectetur aliquet mauris blandit
+
+- Ipsum dis nec porttitor urna sed
+
+---
+background-color: #70A9A1
+class: middle, center
+
+<img src="https://c.tenor.com/noMIUq544FwAAAAd/mushoku-tensei-anime.gif"/>
+
+---
+background-color: #6F732F
+class: middle, center
+
+<img src="https://64.media.tumblr.com/89bb5b4cf4bd44eaf5d6e60f68604a0f/9b51bf16da9d321e-d0/s1280x1920/a21f6c69ec7c7f8b1f5dbbe87bf2d35af0de506a.gifv"/>
+
+---
+name: colors
+
+## Colors
+
+.left-column[
+Text color
+
+[Link Color](#3)
+
+**Bold Color**
+
+_Italic Color_
+
+`Inline Code`
+]
+
+.right-column[
+Lorem ipsum dolor sit amet, [consectetur adipiscing elit (link)](#3), 
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+Erat nam at lectus urna.
+Pellentesque elit ullamcorper **dignissim cras tincidunt (bold)** lobortis feugiat. 
+_Eros donec ac odio tempor_ orci dapibus ultrices. 
+Id porta nibh venenatis cras sed felis eget velit aliquet.
+Aliquam id diam maecenas ultricies mi.
+Enim sit amet 
+`code_color("inline")`
+venenatis urna cursus eget nunc scelerisque viverra.
+]
+
+
+
+---
+
+# Big Topic or Inverse Slides `#`
+
+## Slide Headings `##`
+
+### Sub-slide Headings `###`
+
+#### Bold Call-Out `####`
+
+This is a normal paragraph text. Only use header levels 1-4.
+
+##### Possible, but not recommended `#####`
+
+###### Definitely don't use h6 `######`
+
+<blockquote style ="color:#011638">
+Every project you work on, always at least have one collaborator, and that's future you.
+Hadley Wickham, chief scientist at RStudio
+</blockquote >
+
+
+
+---
+background-color: #E2EF70
+class: left, middle
+
+# Como Entrenar 
+
+.pull-left[
+<blockquote style="color:#FFFFFF; font-size: 20px; background: #A7333F; margin: 10px 100px; line-height:1; padding: 80px 50px">
+
+<div style="text-align: justify"><span; font-family:Pushster; font-style:normal"> 
+
+hola amigos esta es una guia la cual
+</span></div> 
+
+</blockquote>
+]
+
+.pull-right[
+<div><p style = 'right;margin: -260px 0px'>
+<img src="https://i.pinimg.com/474x/2c/fa/59/2cfa594b03723af43a746ff13c454bdd.jpg"width="440px" height="600px"></p></div>
+]
+
+---
+background-color: #E8DB7D
+
+# dos
+
+
+- <span style="color:white"> </span>
+- <span style="color:yellow">fill</span>
+- <span style="color:red">tamaño</span>
+- <span style="color:orange">libreria</span>
+
+
+
+
+---
+class: left, middle
+
+# Topic Changing Interstitial
+
+
+
+--
+
+```
+class: inverse center middle
+```
+
+---
+layout: true
+
+## Blocks
+
+---
+
+### Blockquote
+
+> This is a blockquote following a header.
+>
+> When something is important enough, you do it even if the odds are not in your favor.
+
+---
+
+### Code Blocks
+
+#### R Code
+
+```{r eval=FALSE}
+ggplot(gapminder) +
+  aes(x = gdpPercap, y = lifeExp, size = pop, color = country) +
+  geom_point() +
+  facet_wrap(~year)
+```
+
+#### JavaScript
+
+```js
+var fun = function lang(l) {
+  dateformat.i18n = require('./lang/' + l)
+  return true;
+}
+```
+
+---
+
+### More R Code
+
+```{r eval=FALSE}
+dplyr::starwars %>% dplyr::slice_sample(n = 4)
+```
+
+---
+
+```{r message=TRUE, eval=requireNamespace("cli", quietly = TRUE)}
+cli::cli_alert_success("It worked!")
+```
+
+--
+
+```{r message=TRUE}
+message("Just a friendly message")
+```
+
+--
+
+```{r warning=TRUE}
+warning("This could be bad...")
+```
+
+--
+
+```{r error=TRUE}
+stop("I hope you're sitting down for this")
+```
+
+
+---
+layout: true
+
+## Tables
+
+---
+exclude: `r if (requireNamespace("tibble", quietly=TRUE)) "false" else "true"`
+
+```{r eval=requireNamespace("tibble", quietly=TRUE)}
+tibble::as_tibble(mtcars)
+```
+
+---
+
+```{r}
+knitr::kable(head(mtcars), format = 'html')
+```
+
+---
+exclude: `r if (requireNamespace("DT", quietly=TRUE)) "false" else "true"`
+
+```{r eval=requireNamespace("DT", quietly=TRUE)}
+DT::datatable(head(mtcars), fillContainer = FALSE, options = list(pageLength = 4))
+```
+
+---
+layout: true
+
+## Lists
+
+---
+
+.pull-left[
+#### Here is an unordered list:
+
+*   Item foo
+*   Item bar
+*   Item baz
+*   Item zip
+]
+
+.pull-right[
+
+#### And an ordered list:
+
+1.  Item one
+1.  Item two
+1.  Item three
+1.  Item four
+]
+
+---
+
+### And a nested list:
+
+- level 1 item
+  - level 2 item
+  - level 2 item
+    - level 3 item
+    - level 3 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+  - level 2 item
+  - level 2 item
+- level 1 item
+
+---
+
+### Nesting an ol in ul in an ol
+
+- level 1 item (ul)
+  1. level 2 item (ol)
+  1. level 2 item (ol)
+    - level 3 item (ul)
+    - level 3 item (ul)
+- level 1 item (ul)
+  1. level 2 item (ol)
+  1. level 2 item (ol)
+    - level 3 item (ul)
+    - level 3 item (ul)
+  1. level 4 item (ol)
+  1. level 4 item (ol)
+    - level 3 item (ul)
+    - level 3 item (ul)
+- level 1 item (ul)
+
+---
+layout: true
+
+## Plots
+
+---
+
+```{r plot-example, eval=requireNamespace("ggplot2", quietly=TRUE)}
+library(ggplot2)
+(g <- ggplot(mpg) + aes(hwy, cty, color = class) + geom_point())
+```
+
+---
+
+```{r plot-example-themed, eval=requireNamespace("showtext", quietly=TRUE) && requireNamespace("ggplot2", quietly=TRUE)}
+g + xaringanthemer::theme_xaringan(text_font_size = 16, title_font_size = 18) +
+  ggtitle("A Plot About Cars")
+```
+
+.footnote[Requires `{showtext}`]
+
+---
+layout: false
+
+## Square image
+
+<center><img src="https://octodex.github.com/images/labtocat.png" alt="GithHub Octocat" height="400px" /></center>
+
+.footnote[GitHub Octocat]
+
+---
+
+### Wide image
+
+![A wide image with a diagram of branching in git.](https://docs.github.com/assets/images/help/repository/branching.png)
+
+.footnote[Wide images scale to 100% slide width]
+
+---
+
+## Two images
+
+.pull-left[
+![A GitHub Octocat, style "mother hubber"](https://octodex.github.com/images/motherhubbertocat.png)
