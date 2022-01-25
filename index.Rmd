@@ -1,5 +1,5 @@
 ---
-title: Introducción a Rstudio
+title: Introducción a GitHub
 author: 
   Carlos Puma 
   <center><a href="url"><img src="https://scontent.faqp3-1.fna.fbcdn.net/v/t1.15752-9/s206x206/269975978_4813364912057603_3696184310843055192_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=aee45a&_nc_eui2=AeG0nDQ2RjgRh4cOanzlNsDdE0HzODKAaQgTQfM4MoBpCA6CW6Q15X38coM85E7JvyBX3xLlB2L3vonqiuPEPksU&_nc_ohc=16BfUQhirfkAX-V9dPp&_nc_ht=scontent.faqp3-1.fna&oh=03_AVIxl4vKvWAvBi-FflE82wV12qNE37TIwfP8WaO_mXQYrw&oe=61FECBF5" height="200" width="200" style="border-radius:50%"></a>
